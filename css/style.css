@@ -177,7 +177,7 @@ html {
   box-sizing: border-box;
 }
 .bg {
-  background: url(/static/reservation.jpg);
+  background: url(/static/reviews.jpg);
   background-size: cover;
 }
 a {
