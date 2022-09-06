@@ -293,13 +293,14 @@ a {
   text-align: center;
 }
 .contact .contact h2 {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 500;
   color: white;
 }
 .contact .content p {
   font-weight: 300;
   color: white;
+  font-size: 24px;
 }
 .container {
   width: 100%;
@@ -406,4 +407,129 @@ a {
   .container .contactInfo {
     width: 100%;
   }
+}
+/*Leave-review*/
+
+.contact1 {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(/static/leave_review.jpg);
+  background-size: cover;
+}
+.contact1 .content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact1 .contact h1 {
+  font-size: 26px;
+  font-weight: 300;
+  color: white;
+}
+.contact1 .content p {
+  font-weight: 200;
+  color: white;
+  font-size: 20px;
+}
+.reservationForm1 {
+  width: 40%;
+  padding: 40px;
+  background: lightblue;
+}
+.reservationForm1 h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.reservationForm1 .inputBox1 {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.reservationForm1 .inputBox1 input,
+.reservationForm1 .inputBox1 textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.reservationForm1 .inputBox1 span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 17px;
+  margin: 11px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.reservationForm1 .inputBox1 input:focus ~ span,
+.reservationForm1 .inputBox1 input:valid ~ span,
+.reservationForm1 .inputBox1 textarea:focus ~ span,
+.reservationForm1 .inputBox1 textarea:valid ~ span {
+  color: goldenrod;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.reservationForm1 .inputBox1 input[type="submit"] {
+  width: 100px;
+  background: midnightblue;
+  color: lightblue;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 19px;
+}
+/*Admin*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.background {
+  background: url(/static/admin.jpg);
+  background-size: cover;
+}
+.login {
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+}
+.login h1 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+.login p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+.login input {
+  font-size: 16px;
+  width: 100%;
+  padding: 15px 10px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+}
+.login button {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 10px 15px;
+  width: 50%;
+  border-radius: 5px;
+  border: 0;
 }
