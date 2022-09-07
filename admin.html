@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body class="background">
     <div class="login">
       <h1>Admin Login</h1>
       <form action="#" method="post">
         <p>User Name</p>
-        <input type="text" name="user" placeholder="User Name" />
+        <input type="text" name="user" placeholder="User Name" class="name" />
         <p>Password</p>
-        <input type="password" name="password" placeholder="password" />
-        <button type="submit">Login</button>
+        <input
+          type="password"
+          name="password"
+          placeholder="password"
+          class="password"
+        />
+        <button type="submit" class="submit-button">Login</button>
+        <div class="output"></div>
       </form>
     </div>
+    <script type="module" src="js/admin_login.js"></script>
   </body>
 </html>
