@@ -1,6 +1,5 @@
 let reviews = document.querySelector(".reviews_box_container");
 
-let notices = document.querySelector(".notices");
 let output = document.querySelector(".output");
 
 async function getReviews() {
@@ -31,10 +30,10 @@ function getOutputHTML(data) {
   return outputHTML;
 }
 
-async function renderNotices() {
+async function renderReviews() {
   const data = await getReviews();
   const outputHTML = getOutputHTML(data);
   reviews.innerHTML = outputHTML;
 }
 
-renderNotices();
+renderReviews();

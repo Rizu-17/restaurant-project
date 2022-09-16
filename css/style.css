@@ -574,3 +574,24 @@ a {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   color: white;
 }
+/*Admin Panel*/
+
+.list button {
+  width: 100px;
+  background: midnightblue;
+  color: lightblue;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 19px;
+}
+
+.submit-button1 {
+  top: 0px;
+  right: 20px;
+  border-radius: 20px;
+  margin: 45px;
+  position: absolute;
+  margin-top: 20px;
+  align-self: top;
+}

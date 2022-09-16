@@ -6,18 +6,6 @@ let form = document.querySelector(".rsrv-form");
 
 form.addEventListener("submit", addNewReservation);
 
-// function addNoticeToLocalStorage(title, body) {
-//   let data = localStorage.getItem("notices");
-//   let notices = JSON.parse(data);
-//   notices.push({
-//     id: notices.length + 1,
-//     title,
-//     body,
-//   });
-
-//   localStorage.setItem("notices", JSON.stringify(notices));
-// }
-
 async function addNewReservation(e) {
   e.preventDefault();
   const rsrv_name = fullname.value;

@@ -1,6 +1,6 @@
 let listDiv = document.querySelector(".rsrv-list");
 
-async function getReviews() {
+async function getReservations() {
   const res = await axios.get("http://localhost:3000/api/reservation");
   return res.data.data.data;
 }
@@ -19,10 +19,10 @@ function getOutputHTML(data) {
   return outputHTML;
 }
 
-async function renderReviews() {
-  const data = await getReviews();
+async function renderResrvations() {
+  const data = await getReservations();
   const outputHTML = getOutputHTML(data);
   listDiv.innerHTML = outputHTML;
 }
 
-renderReviews();
+renderResrvations();
